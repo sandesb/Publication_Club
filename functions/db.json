@@ -1,0 +1,548 @@
+{
+  "users": [
+    {
+      "username": "suni",
+      "password": "Reprehenderit soluta",
+      "email": "qametovez@mailinator.com",
+      "sem": 2,
+      "city": "Occaecat autem autem",
+      "id": "95cfebd1-93b5-4ad8-b7ad-2ce6b9579760"
+    },
+    {
+      "id": "7e7bab63-4ae3-4fee-9098-3436754dc0e1",
+      "username": "dyryrale",
+      "password": "Veniam voluptas sun",
+      "email": "waryvumo@mailinator.com",
+      "sem": 1,
+      "city": "Debitis quod facilis"
+    },
+    {
+      "id": "bf8aadf3-b853-4614-bc6e-0008a4607d4e",
+      "username": "gewelehir",
+      "password": "Est pariatur In qui",
+      "email": "pomywimar@mailinator.com",
+      "sem": 1,
+      "city": "Laudantium sit ipsu"
+    },
+    {
+      "id": "b9f3fcb3-b362-482f-805d-1f9823885735",
+      "username": "juqofub",
+      "password": "Excepteur maiores fu",
+      "email": "riwure@mailinator.com",
+      "sem": 1,
+      "city": "Reprehenderit cum o"
+    },
+    {
+      "id": "7d36575d-ff5c-41f4-9dff-e84025b5b2be",
+      "username": "gyrec",
+      "password": "Tempora vel omnis un",
+      "email": "tubi@mailinator.com",
+      "sem": 1,
+      "city": "Facere nisi libero u"
+    },
+    {
+      "id": "cd29a29b-e170-411e-b772-642f06f0e1ec",
+      "username": "radedut",
+      "password": "Esse culpa quam ani",
+      "email": "zuqiji@mailinator.com",
+      "sem": 1,
+      "city": "Possimus quod dolor"
+    },
+    {
+      "id": "b22186a1-7fb1-42fd-943a-6c5e5f480e22",
+      "username": "radedut",
+      "password": "Esse culpa quam ani",
+      "email": "zuqiji@mailinator.com",
+      "sem": 1,
+      "city": "Possimus quod dolor"
+    },
+    {
+      "id": "4f024ff5-31c1-4144-a7c8-c96def0d2f1c",
+      "username": "nesytuli",
+      "password": "Animi consequatur r",
+      "email": "dysinuf@mailinator.com",
+      "sem": 1,
+      "city": "Amet qui et vitae m"
+    },
+    {
+      "id": "5f6826a4-4562-40fd-bb39-c1c2622a051b",
+      "username": "dapybapak",
+      "password": "Incididunt est ipsu",
+      "email": "walawud@mailinator.com",
+      "sem": 1,
+      "city": "Qui recusandae Plac"
+    },
+    {
+      "id": "f317692c-5549-4672-b40c-dfc01570788f",
+      "username": "kulofujuru",
+      "password": "Laudantium alias mo",
+      "email": "narodohiv@mailinator.com",
+      "sem": 1,
+      "city": "Similique enim beata"
+    },
+    {
+      "id": "ac230ff4-99ad-421a-8640-b80648da4dbc",
+      "username": "nocar",
+      "password": "Odit at vero et labo",
+      "email": "hoquwaj@mailinator.com",
+      "sem": 1,
+      "city": "Consequat Quasi ven"
+    },
+    {
+      "id": "f0d44312-4e21-48e1-9424-fa7c37a4a44a",
+      "username": "bogimibome",
+      "password": "Sed autem ut culpa ",
+      "email": "mykukud@mailinator.com",
+      "sem": 1,
+      "city": "Quidem ducimus earu"
+    },
+    {
+      "id": "7c7b9f52-1043-416b-a5c0-e34cbc835ed9",
+      "username": "piqibyma",
+      "password": "Dolorem iste volupta",
+      "email": "bofyje@mailinator.com",
+      "sem": 1,
+      "city": "Nobis rem aliquam ad"
+    },
+    {
+      "id": "2267cf81-957d-4ebd-9caf-468ecc267b36",
+      "username": "jaqyh",
+      "password": "Aut veniam odio ver",
+      "email": "tigele@mailinator.com",
+      "sem": 1,
+      "city": "Qui consequatur err"
+    },
+    {
+      "id": "9fc1f742-f917-4e60-aba2-e1482b6f53b6",
+      "username": "higirakaxe",
+      "password": "Sit corrupti facili",
+      "email": "bote@mailinator.com",
+      "sem": 1,
+      "city": "Qui sit maxime in ea"
+    },
+    {
+      "id": "50060b27-327a-40de-897d-02fd87ef951c",
+      "username": "fyzokuw",
+      "password": "Nihil tempore ad ul",
+      "email": "guqidumyw@mailinator.com",
+      "sem": 1,
+      "city": "Nihil dolor amet de"
+    },
+    {
+      "id": "3fca526b-383c-4a6e-8d51-48d6b1c4ec71",
+      "username": "wytobi",
+      "password": "Sunt sint animi co",
+      "email": "xagoqi@mailinator.com",
+      "sem": 1,
+      "city": "Tempora eos laborios"
+    },
+    {
+      "id": "82d20f0e-b450-43ee-9466-e10997832248",
+      "username": "bses",
+      "password": "Non non dolores dolo",
+      "email": "zubula@mailinator.com",
+      "sem": 1,
+      "city": "Voluptatem reprehend"
+    },
+    {
+      "id": "aa336d4c-3872-4505-b179-4b0004824320",
+      "username": "sunit",
+      "password": "Aspernatur molestiae",
+      "email": "cavokytuf@mailinator.com",
+      "sem": 1,
+      "city": "Velit cupidatat qua"
+    },
+    {
+      "username": "reema",
+      "password": "Pa$$w0rd!",
+      "email": "reema@gmail.com",
+      "sem": 1,
+      "city": "bhaktapur",
+      "id": "284ed318-0fd0-425d-be75-e48a09a29775"
+    },
+    {
+      "id": "2c79867e-dcb1-4ef0-85b7-817b2a458004",
+      "username": "jaxit",
+      "password": "Pa$$w0rd!",
+      "email": "pemuh@mailinator.com",
+      "sem": 2,
+      "city": "Sint dolore irure cu"
+    },
+    {
+      "id": "99889d38-0e9e-4a41-b7f7-13abc40d8cbb",
+      "username": "tataziro",
+      "password": "Pa$$w0rd!",
+      "email": "qobumejy@mailinator.com",
+      "sem": 2,
+      "city": "Ipsa veritatis assu"
+    },
+    {
+      "id": "c66184ba-3646-4c89-b248-9846328fe2b3",
+      "username": "cowahytypy",
+      "password": "Ut rerum quis in fac",
+      "email": "mecu@mailinator.com",
+      "sem": 2,
+      "city": "Itaque eum Nam susci"
+    },
+    {
+      "id": "b6049034-62cd-4b16-8219-dfc511826661",
+      "username": "qybytipuq",
+      "password": "Consequatur Digniss",
+      "email": "nese@mailinator.com",
+      "sem": 2,
+      "city": "Sed rem pariatur Ni"
+    },
+    {
+      "id": "5a38a12a-39e4-4131-9192-5bc83a6f9481",
+      "username": "daruru",
+      "password": "Exercitationem enim ",
+      "email": "ramevada@mailinator.com",
+      "sem": 2,
+      "city": "Dolorem beatae ex qu"
+    },
+    {
+      "id": "520af605-52af-451c-bb4b-7a1c44125ae1",
+      "username": "susadu",
+      "password": "Iste quasi culpa fug",
+      "email": "goqihobi@mailinator.com",
+      "sem": 2,
+      "city": "Quia rem eiusmod exc"
+    },
+    {
+      "id": "2672813a-b71c-4bc5-a4f7-6bcab2b0529e",
+      "username": "sewubej",
+      "password": "Voluptates qui volup",
+      "email": "kuvil@mailinator.com",
+      "sem": 2,
+      "city": "Fugit nostrum aperi"
+    },
+    {
+      "id": "b464ebf8-cf6c-4b24-8044-f33fbd76e8e1",
+      "username": "Sarda",
+      "password": "8sd87",
+      "email": "jsanaj@gmail.com",
+      "sem": 2,
+      "city": "9876567"
+    },
+    {
+      "id": "bc85874c-7768-4145-958d-ca8ef81bd239",
+      "username": "",
+      "password": "",
+      "email": "",
+      "sem": 2,
+      "city": ""
+    },
+    {
+      "id": "d9b7aa72-4d29-47b7-9f8f-207992866946",
+      "username": "Bandes",
+      "password": "sass",
+      "email": "sandes@gmail.com",
+      "sem": 2,
+      "city": "98989898"
+    },
+    {
+      "id": "e8c95ced-60ae-4fed-9bef-95b6ad2959ea",
+      "username": "cubadava",
+      "password": "Numquam sed unde ut ",
+      "email": "hege@mailinator.com",
+      "sem": 2,
+      "city": "Voluptates illum et"
+    },
+    {
+      "id": "284ed318-0fd0-425d-be75-e48a09a29775",
+      "username": "reem",
+      "password": "Pa$$w0rd!",
+      "email": "reema@gmail.com",
+      "sem": 3,
+      "city": "bhaktapur"
+    },
+    {
+      "username": "wy",
+      "password": "Pa$$w0rd!",
+      "email": "dikuxu@mailinator.com",
+      "sem": 2,
+      "city": "Ipsa velit perferen",
+      "id": "0bcd9988-1db2-4d15-ac1e-9a96924dccaa"
+    },
+    {
+      "id": "2c79867e-dcb1-4ef0-85b7-817b2a458004",
+      "username": "jaxit",
+      "password": "Pa$$w0rd!",
+      "email": "pemuh@mailinator.com",
+      "sem": 3,
+      "city": "Sint dolore irure cu"
+    },
+    {
+      "id": "99889d38-0e9e-4a41-b7f7-13abc40d8cbb",
+      "username": "tataziro",
+      "password": "Pa$$w0rd!",
+      "email": "qobumejy@mailinator.com",
+      "sem": 3,
+      "city": "Ipsa veritatis assu"
+    },
+    {
+      "id": "e33d6854-af3d-4c1d-a1c1-7fc8c9484999",
+      "username": "sonatucifa",
+      "password": "Non quis itaque quia",
+      "email": "kobem@mailinator.com",
+      "sem": 3,
+      "city": "Consectetur rerum q"
+    },
+    {
+      "id": "5604a065-fce7-4128-b2c3-79b152468bae",
+      "username": "setasyhu",
+      "password": "Neque sed nulla in i",
+      "email": "fypevipe@mailinator.com",
+      "sem": 3,
+      "city": "Id lorem labore vel "
+    },
+    {
+      "id": "701befd1-4c58-4618-b458-926cf1dd10d3",
+      "username": "cujicak",
+      "password": "Est aute corrupti ",
+      "email": "byve@mailinator.com",
+      "sem": 3,
+      "city": "Voluptatem Aut susc"
+    },
+    {
+      "id": "dfbc50c3-0eb4-4c3d-9398-734270fa28b5",
+      "username": "hirenom",
+      "password": "Veniam hic ipsum it",
+      "email": "qake@mailinator.com",
+      "sem": 3,
+      "city": "Vitae rerum accusamu"
+    },
+    {
+      "id": "fbc3a017-33c3-41af-8bc0-610d1e8c1eef",
+      "username": "mequnygese",
+      "password": "Ea temporibus atque ",
+      "email": "seqinyx@mailinator.com",
+      "sem": 3,
+      "city": "Aut perferendis ex e"
+    },
+    {
+      "id": "ab9ba7d9-d92f-4158-8a76-54302420be67",
+      "username": "pytagilegys",
+      "password": "Qui officiis in nisi",
+      "email": "jaratahu@mailinator.com",
+      "sem": 3,
+      "city": "Aliqua Est ullamco ",
+      "age": "secondsem"
+    },
+    {
+      "id": "3e23fedf-e173-42d8-8e12-10e3956e78b1",
+      "username": "kisito",
+      "password": "Consectetur voluptas",
+      "email": "coholys@mailinator.com",
+      "sem": 3,
+      "city": "Et molestiae in blan"
+    },
+    {
+      "id": "284ed318-0fd0-425d-be75-e48a09a29775",
+      "username": "sandes",
+      "password": "Pa$$w0rd!",
+      "email": "reema@gmail.com",
+      "sem": 4,
+      "city": "bhaktapur"
+    },
+    {
+      "id": "0bcd9988-1db2-4d15-ac1e-9a96924dccaa",
+      "username": "wypog",
+      "password": "Pa$$w0rd!",
+      "email": "dikuxu@mailinator.com",
+      "sem": 4,
+      "city": "Ipsa velit perferen"
+    },
+    {
+      "id": "2c79867e-dcb1-4ef0-85b7-817b2a458004",
+      "username": "jaxit",
+      "password": "Pa$$w0rd!",
+      "email": "pemuh@mailinator.com",
+      "sem": 4,
+      "city": "Sint dolore irure cu"
+    },
+    {
+      "id": "99889d38-0e9e-4a41-b7f7-13abc40d8cbb",
+      "username": "tataziro",
+      "password": "Pa$$w0rd!",
+      "email": "qobumejy@mailinator.com",
+      "sem": 4,
+      "city": "Ipsa veritatis assu"
+    },
+    {
+      "id": "3",
+      "username": "beema",
+      "email": "reema@gnmail.com",
+      "sem": 1,
+      "city": "Bhaktapur"
+    },
+    {
+      "id": "7a0195f8-d17a-45a3-a88e-34d5a47a0fe8",
+      "username": "jerihaj",
+      "password": "Aperiam aperiam magn",
+      "email": "bykalaz@mailinator.com",
+      "sem": 4,
+      "city": "Nulla impedit volup"
+    },
+    {
+      "id": "c078fcb4-2f16-42b4-a725-6dfe890478b0",
+      "username": "helow",
+      "password": "Porro quis nostrud n",
+      "email": "radebafehy@mailinator.com",
+      "sem": 1,
+      "city": "Sunt accusamus ut la"
+    },
+    {
+      "id": "7a02878c-7a1b-411f-9423-c59a518db780",
+      "username": "nywivowu",
+      "password": "Ut ipsum et invento",
+      "email": "rizelof@mailinator.com",
+      "sem": 3,
+      "city": "Ut eveniet aperiam "
+    },
+    {
+      "id": "2580b88f-4f51-4458-be7e-7e1f67d4b21f",
+      "username": "won",
+      "password": "Exercitationem dicta",
+      "email": "bajracharyasandeshh@gmail.com",
+      "sem": 1,
+      "city": "Est tempore labori"
+    },
+    {
+      "id": "1b5e3c92-e91f-421e-b4b6-d202bf021ac9",
+      "username": "Mysterio",
+      "password": "Velit veniam nihil ",
+      "email": "terio.sandesh@gmail.com",
+      "sem": 3,
+      "city": "Duis itaque dolor di"
+    },
+    {
+      "id": "29a9afee-a342-4d7d-bbe5-c09462f4181d",
+      "username": "Sarada Bajracharya",
+      "password": "2312",
+      "email": "saradabajracharya0@gmail.com",
+      "sem": 1,
+      "city": "Patan"
+    },
+    {
+      "id": "8c8c6ea6-91eb-4165-8cba-c8f19778c1e4",
+      "username": "Riyon",
+      "password": "Doloremque reprehend",
+      "email": "basnet.riyon@gmail.com",
+      "sem": 3,
+      "city": "Corporis adipisicing"
+    },
+    {
+      "id": "2f2a3869-532a-408a-b3eb-3fe2761ccd55",
+      "username": "Sunit Shakya",
+      "password": "asd",
+      "email": "shakyasunit11@gmail.com",
+      "sem": 1,
+      "city": "Patan"
+    },
+    {
+      "id": "5f6b3d80-c656-4cb0-aca5-d4fce616f99a",
+      "username": "Bses",
+      "password": "asd",
+      "email": "specialman2099@gmail.com",
+      "sem": 1,
+      "city": "Patan"
+    },
+    {
+      "id": "8b11aefa-66eb-492d-aeb9-8c18b6070477",
+      "username": "Sadhana Sapkota",
+      "password": "8798709",
+      "email": "mandeyra7@gmail.com",
+      "sem": 4,
+      "city": "Ktm"
+    },
+    {
+      "id": "5a2b8976-0152-4bc0-8be5-cf84771f73f6",
+      "username": "dizuzozyx",
+      "password": "Molestias laboris qu",
+      "email": "lina@mailinator.com",
+      "sem": 1,
+      "city": "Laborum beatae qui m"
+    },
+    {
+      "id": "a352d05e-323d-4590-b6c3-1e5df1f3ef6a",
+      "username": "Test",
+      "password": "922912",
+      "email": "terio.sandesh@gmail.com",
+      "sem": 2,
+      "city": "sda"
+    },
+    {
+      "id": "716961f0-22ed-48e6-a413-65befc16902b",
+      "username": "walipa",
+      "password": "Nostrud consequatur",
+      "email": "dyfyvukasu@mailinator.com",
+      "sem": 3,
+      "city": "Velit adipisci volup"
+    },
+    {
+      "id": "c12f70af-8dbf-4419-9d93-531933f2261a",
+      "username": "mababetex",
+      "password": "Ipsum iusto maxime v",
+      "email": "tuqexoqepu@mailinator.com",
+      "sem": 4,
+      "city": "Dolor adipisicing su"
+    },
+    {
+      "id": "76435b16-3891-4f57-b0ae-197b9e469b75",
+      "username": "bello",
+      "password": "At dolore autem dolo",
+      "email": "tomedune@mailinator.com",
+      "sem": 4,
+      "city": "Natus est est duis "
+    },
+    {
+      "username": "rise",
+      "password": "Et ipsum explicabo",
+      "email": "sige@mailinator.com",
+      "sem": 2,
+      "city": "At excepturi commodo",
+      "id": "40efad92-7341-4e18-8d39-4c43b0e8af0f"
+    },
+    {
+      "id": "374f",
+      "username": "Dummy",
+      "password": "Qui id id elit in o",
+      "email": "eduroast@gmail.com",
+      "sem": 2,
+      "city": "Fugit quasi non qui"
+    },
+    {
+      "id": "fe4c",
+      "username": "zobiqenu",
+      "password": "Consectetur dolore ",
+      "email": "loheq@mailinator.com",
+      "sem": 3,
+      "city": "Aliquid elit corrup"
+    },
+    {
+      "id": "a0c4",
+      "username": "zureto",
+      "password": "Enim fuga Aliquid a",
+      "email": "zohis@mailinator.com",
+      "sem": 2,
+      "city": "Ea eos qui autem co"
+    },
+    {
+      "id": "2681",
+      "username": "totylyko",
+      "password": "Nemo dolore cumque c",
+      "email": "xiruden@mailinator.com",
+      "sem": 2,
+      "city": "Deleniti consectetur"
+    },
+    {
+      "id": "240a",
+      "username": "Roshan KC",
+      "password": "54577588",
+      "email": "roshan.kc9851@gmail.com",
+      "sem": 4,
+      "city": "Nisi qui delectus i"
+    }
+  ]
+}

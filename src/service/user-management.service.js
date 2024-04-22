@@ -13,7 +13,8 @@ const firebaseConfig = {
 
 const firebaseApp = initializeApp(firebaseConfig);
 // const db = getDatabase(firebaseApp);
-const BASE_URL = 'http://localhost:4000/users';
+// const BASE_URL = 'http://localhost:4000/users';
+const BASE_URL = '/.netlify/functions/getUserById';
 
 
 const dbRef = ref(getDatabase());
@@ -156,16 +157,30 @@ export const deleteUser = (userId) => {
   });
 }
 
+// export const getUserById = (id) => {
+//   return new Promise((resolve, reject) => {
+//     axios.get(`${BASE_URL}/${id}`)
+//         .then((res) => {
+//           resolve(res.data);
+//         }).catch((err) => {
+//           reject(err);
+//         })
+//   });
+// }
+
 export const getUserById = (id) => {
   return new Promise((resolve, reject) => {
-    axios.get(`${BASE_URL}/${id}`)
-        .then((res) => {
-          resolve(res.data);
-        }).catch((err) => {
-          reject(err);
-        })
+    fetch(`${BASE_URL}?id=${id}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(user => resolve(user))
+      .catch(error => reject(error));
   });
-}
+};
 
 export const searchByUsername = (username) => {
   return new Promise((resolve, reject) => {
