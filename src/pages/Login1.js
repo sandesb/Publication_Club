@@ -6,6 +6,7 @@ import ViTextInput from "../components/ViTextInput";
 import ViMessage from "../components/ViMessage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
 
 
 const Login1 = () => {
@@ -42,6 +43,13 @@ const Login1 = () => {
           draggable: true,
           progress: undefined,
           theme: "colored",
+          });
+          Swal.fire({
+            title: `Click on '🔮' to Toggle Dark Mode (Bottom-Right)!`,
+            position: "top-center",
+  icon: "success",
+  showConfirmButton: false,
+  timer: 3500,
           });
       }
   
