@@ -119,7 +119,7 @@ const UserManagement = () => {
              
 
         <div class="flex1">
-            <p className="mt-5">{values}</p>
+            <p className="mt-5">Semester {values}</p>
 
           <div className="mb-4">
         <button class="addB mx-4"><Link  className="link" to="/pages/UserManagement/AddUser">
@@ -134,27 +134,29 @@ const UserManagement = () => {
             <div className="vi-flex-container">
         <div style={{flexGrow: '5'}} className="relative">
           <ViTextInput
+          className="ifield"
             title="Username"
             name="username"
-            placeholder="Search by username"
+            placeholder="Search by Name...      🔍"
             value={searchUsername}
             handleInputChange={handleSearchUsername}
             />
-        <i className="fa fa-user">🔍</i>
 
         </div>
 
         
         <br></br>
         <div style={{flexGrow: '5'}}  className="relative">
+
           <ViTextInput
+          className="ifield fa-user"
             title="Email"
             name="email"
-            placeholder="Search by email"
+            placeholder="Search by Mail...         🔎"
             value={searchEmail}
             handleInputChange={handleSearchEmail}
             />
-        <i className="fa fa-user">🔎</i>
+
 
         </div>
         <br></br>

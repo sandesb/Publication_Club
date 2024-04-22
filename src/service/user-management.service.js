@@ -101,48 +101,48 @@ export const updateUser = (id, data) => {
   });
 }
 
-// export const addUser = (data) => {
-//   return new Promise((resolve, reject) => {
-//     axios.post(BASE_URL, data)
-//         .then(() => {
-//           resolve(true);
-//         }).catch((err) => {
-//           reject(err);
-//         })
-//   });
-// }
+export const addUser = (data) => {
+  return new Promise((resolve, reject) => {
+    axios.post(BASE_URL, data)
+        .then(() => {
+          resolve(true);
+        }).catch((err) => {
+          reject(err);
+        })
+  });
+}
 
-export const addUser = async (userData) => {
-  const { username, password, email, sem, city } = userData;
+// export const addUser = async (userData) => {
+//   const { username, password, email, sem, city } = userData;
 
-  const newUser = {
-    id: uuidv4(),
-    username,
-    password,
-    email,
-    sem: +sem,
-    city,
-  };
+//   const newUser = {
+//     id: uuidv4(),
+//     username,
+//     password,
+//     email,
+//     sem: +sem,
+//     city,
+//   };
 
-  console.log('Adding new user to Firestore:', newUser);
+//   console.log('Adding new user to Firestore:', newUser);
   
-// Create a new Promise to perform Firestore operation
-return new Promise((resolve, reject) => {
-  debugger;
-  const userRef = doc(db, 'users', newUser.id); // Reference to new user document
+// // Create a new Promise to perform Firestore operation
+// return new Promise((resolve, reject) => {
+//   debugger;
+//   const userRef = doc(db, 'users', newUser.id); // Reference to new user document
 
-  // Use setDoc to add new user document to Firestore
-  // setDoc(usersRef, newUser)
-  //   .then(() => {
-  //     console.log('User added successfully to Firestore');
-  //     resolve(true); // Resolve promise upon successful addition
-  //   })
-  //   .catch((error) => {
-  //     console.error('Error adding user to Firestore:', error);
-  //     reject(error); // Reject promise with error
-  //   });
-});
-};
+//   // Use setDoc to add new user document to Firestore
+//   // setDoc(usersRef, newUser)
+//   //   .then(() => {
+//   //     console.log('User added successfully to Firestore');
+//   //     resolve(true); // Resolve promise upon successful addition
+//   //   })
+//   //   .catch((error) => {
+//   //     console.error('Error adding user to Firestore:', error);
+//   //     reject(error); // Reject promise with error
+//   //   });
+// });
+// };
 
 
 export const deleteUser = (userId) => {

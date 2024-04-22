@@ -127,11 +127,11 @@ updateAvatarImage();
                           </button> */}
                         </div>
                         <div className="col-6 mb-3">
-                          <h6>Age</h6>
-                          <p className="text-muted">{user.age}</p>
+                          <h6>Matric No.</h6>
+                          <p className="text-muted">{user.password}</p>
                         </div>
                       </div>
-                      <h6>City</h6>
+                      <h6>Contact</h6>
                       <hr className="mt-0 mb-4" />
                       <div className="row pt-1">
                         <div className="col-6 mb-3">

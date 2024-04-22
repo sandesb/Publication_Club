@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { addUser, getUserById, updateUser, db } from "../../service/user-management.service";
+import Swal from 'sweetalert2';
 
 const AddUser = () => {
   const navigate = useNavigate();
@@ -60,11 +61,19 @@ const AddUser = () => {
       } else {
         // Add new user
         const newUser = { ...userData, id: uuidv4() };
-        alert(newUser.username);
+        Swal.fire({
+          title: `${user.username} added to ${user.sem}!`,
+          position: "top-center",
+icon: "success",
+showConfirmButton: false,
+timer: 1500,
+          
+        });
         try {
         await addUser(userData)
           .then(() => {
             console.log('New user added successfully');
+            
             navigate('/');
           })
           .catch((err) => {
