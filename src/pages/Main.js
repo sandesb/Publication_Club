@@ -157,7 +157,7 @@ const Main = () => {
                         <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
                             <h4 class="mb-3">Head office</h4>
 
-                            <p>Bay St &amp;, Larkin St, San Francisco, CA 94109, United States</p>
+                            <p>Taphalho Rd, Kumaripati, Lalitpur, Nepal</p>
 
                             <hr/>
 
@@ -165,7 +165,7 @@ const Main = () => {
                                 <span class="me-2">Phone</span>
 
                                 <a href="tel: 305-240-9671" class="site-footer-link">
-                                    305-240-9671
+                                +977-1-5452721
                                 </a>
                             </p>
 
@@ -173,24 +173,22 @@ const Main = () => {
                                 <span class="me-2">Email</span>
 
                                 <a href="mailto:info@company.com" class="site-footer-link">
-                                    info@company.com
+                                    virinchipublicationclub.com
                                 </a>
                             </p>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-12 mx-auto">
-                            <h4 class="mb-3">Dubai office</h4>
+                            <h4 class="mb-3">Directions</h4>
 
-                            <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
+                            <p>Virinchi College is located in Lalitpur city, in the vibrant street of Kumaripati </p>
 
                             <hr/>
 
                             <p class="d-flex align-items-center mb-1">
-                                <span class="me-2">Phone</span>
+                                <span class="me-2"> ( in between of Jawalakhel and Lagankhel).</span>
 
-                                <a href="tel: 110-220-3400" class="site-footer-link">
-                                    110-220-3400
-                                </a>
+                              
                             </p>
 
                             <p class="d-flex align-items-center">
