@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Swal from 'sweetalert2';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { DownloadTableExcel } from 'react-export-table-to-excel';
 
 const Counter1 = () => {
+  const tableRef = useRef(null);
   const [umCount, setUmCount] = useState(0);
   const [ahCount, setAhCount] = useState(0);
   const [likeCount, setLikeCount] = useState(0);
@@ -213,8 +215,20 @@ const Counter1 = () => {
         </div>
       </div>
 
+
+      <div className="group">
+      <DownloadTableExcel
+                    filename="users table"
+                    sheet="users"
+                    currentTableRef={tableRef.current}
+                >
+
+                   <button id="save-btn" className="saveexcel"> Export In Excel 🗄</button>
+                </DownloadTableExcel>
+
+                   </div>
       <div className="table-flex">
-        <table className="rep-table table1">
+        <table className="rep-table table1" ref={tableRef}>
           <thead>
             <tr>
               <th className="text-left">Name</th>

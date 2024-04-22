@@ -949,6 +949,18 @@ outline: none;
 box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 10px 100px rgba(0,0,0,0.12);
 width:70%;
 }
+.saveexcel{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 10px 100px rgba(0,0,0,0.12);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.save-excel{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 10px 100px rgba(0,0,0,0.12);
+ margin-bottom: 20%;
+}
 .table2 {
   border-collapse: collapse;
   border: none;

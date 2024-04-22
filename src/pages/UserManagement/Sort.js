@@ -1,14 +1,17 @@
 // Sort.js
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from "react-router-dom";
+import { DownloadTableExcel } from 'react-export-table-to-excel';
 
 
 const Sort = () => {
   const [users, setUsers] = useState([]);
   const { semesterKey } = useParams();
+
   const { values } = useParams();
+  const tableRef = useRef(null);
 
 
   useEffect(() => {
@@ -32,9 +35,20 @@ const Sort = () => {
     <div>
         <br></br>
       <p className='mx-4'>Public Speaking List (Alphabetically)</p>
+
+<div className="group">      <DownloadTableExcel
+                    filename="users table"
+                    sheet="users"
+                    currentTableRef={tableRef.current}
+                >
+
+                   <button id="save-btn" className="save-excel"> Export In Excel 🗄</button>
+                </DownloadTableExcel>
+                </div>
+
       {users.length > 0 &&
         <div className='table-flex'>
-          <table className='table2  '>
+          <table className='table2  ' ref={tableRef}>
             <thead className=''>
               <tr>
                 <th >SN</th>
