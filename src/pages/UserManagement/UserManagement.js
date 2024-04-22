@@ -4,18 +4,16 @@ import ViTable from "../../components/ViTable";
 import ViTextInput from "../../components/ViTextInput";
 
 import axios from "axios";
-import { v4 as uuidv4 } from 'uuid';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useParams,useNavigate } from 'react-router-dom';
-import { getAllUsers, searchByEmail, getUsersBySemester, searchByUsername } from "../../service/user-management.service";
+
+
+import { useParams } from 'react-router-dom';
+import { getAllUsers, searchByEmail, searchByUsername } from "../../service/user-management.service";
 
 
 const UserManagement = () => {
   const { values } = useParams();
-  const uuid = uuidv4();
 
-  const navigate = useNavigate();
+
 
   // const valueToString = {
   //   '1': 'firstsem',
@@ -121,23 +119,24 @@ const UserManagement = () => {
         <div class="flex1">
             <p className="mt-5">Semester {values}</p>
 
-          <div className="mb-4">
-        <button class="addB mx-4"><Link  className="link" to="/pages/UserManagement/AddUser">
+          <div className="mb-4" style={{margin: '0 1% 0 0'}} >
+        <button class="addB mx-8"><Link  className="link" to="/pages/UserManagement/AddUser">
             ➕ Add Speakers 
             </Link></button>
 
-            <button class="addB"><Link  className="link" to={`/pages/UserManagement/Sort/${values}`}>
+            <button class="addB mx-4"><Link  className="link" to={`/pages/UserManagement/Sort/${values}`}>
             Publish List 💻
             </Link></button> 
             </div>
 
             <div className="vi-flex-container">
+
         <div style={{flexGrow: '5'}} className="relative">
           <ViTextInput
           className="ifield"
             title="Username"
             name="username"
-            placeholder="Search by Name...      🔍"
+            placeholder="🔍 Search by Name...      "
             value={searchUsername}
             handleInputChange={handleSearchUsername}
             />
@@ -145,14 +144,13 @@ const UserManagement = () => {
         </div>
 
         
-        <br></br>
         <div style={{flexGrow: '5'}}  className="relative">
 
           <ViTextInput
           className="ifield fa-user"
             title="Email"
             name="email"
-            placeholder="Search by Mail...         🔎"
+            placeholder="🔎 Search by Mail...         "
             value={searchEmail}
             handleInputChange={handleSearchEmail}
             />

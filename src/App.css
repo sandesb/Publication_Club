@@ -384,7 +384,12 @@ font-family: var(--title-font-family);
   margin-top: 5%;
 }
 
-
+.vi-flex-container{
+  display:flex;
+  margin-bottom: 2%;
+  width: 65%;
+  
+}
 .sidebar {
   display: flex;
   height: 70rem;
@@ -394,7 +399,7 @@ font-family: var(--title-font-family);
   justify-content: center;
 }
 .ifield{
-  width: 98%;
+  width: 95%;
 }
 .sidebar-nav {
   list-style-type: none;
