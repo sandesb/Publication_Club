@@ -8,7 +8,7 @@ import axios from "axios";
 
 import { useParams } from 'react-router-dom';
 import { getAllUsers, searchByEmail, searchByUsername } from "../../service/user-management.service";
-
+const BASE_URL = '/.netlify/functions/getUsersBySemester';
 
 const UserManagement = () => {
   const { values } = useParams();
@@ -53,7 +53,7 @@ const UserManagement = () => {
     // Only make the API call if a valid semesterKey is determined
     if (values) {
       axios
-        .get(`http://localhost:4000/users/?sem=${values}`) // Construct the API URL with the semesterKey
+        .get(`${BASE_URL}?sem=${values}`) // Construct the API URL with the semesterKey
         .then((res) => {
           console.log(res.data);
           setUsers(res.data);
