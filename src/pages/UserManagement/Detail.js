@@ -18,17 +18,14 @@ const Detail = () => {
   });
 
 
-
-  useEffect(() => {
-    getUserById(id)
-      .then((data) => {
-        setUser(data);
-      })
-      .catch((err) => {
-        alert("API server error");
-        console.log(err);
-      });
-  }, [id]);
+  useEffect(()=>{
+    getUserById(id).then((data) => {
+      setUser(data);
+    }).catch((err) => {
+      alert("API server error");
+      console.log(err);
+    });
+  }, []);
 
 
   const sendEmail = (e) => {

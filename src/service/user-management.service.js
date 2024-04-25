@@ -182,17 +182,14 @@ export const deleteUser = (userId) => {
 
 export const getUserById = (id) => {
   return new Promise((resolve, reject) => {
-    fetch(`${BASE_URL1}?id=${id}`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(user => resolve(user))
-      .catch(error => reject(error));
+    axios.get(`${BASE_URL1}/${id}`)
+        .then((res) => {
+          resolve(res.data);
+        }).catch((err) => {
+          reject(err);
+        })
   });
-};
+}
 
 export const searchByUsername = (username) => {
   return new Promise((resolve, reject) => {
