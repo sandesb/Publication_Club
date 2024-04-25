@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 import { addUser, getUserById, updateUser, db } from "../../service/user-management.service";
 import Swal from 'sweetalert2';
+import XLSX from 'xlsx';
+import { addUsersFromExcel } from '../../service/user-management.service'; // Import the new API service function
 
 const AddUser = () => {
   const navigate = useNavigate();
@@ -73,8 +75,9 @@ timer: 1500,
         await addUser(userData)
           .then(() => {
             console.log('New user added successfully');
-            
-            navigate('/');
+            // const outputDiv = document.getElementById('output');
+            // outputDiv.textContent = JSON.stringify(userData, null, 2);
+            // navigate('/');
           })
           .catch((err) => {
             console.error('Add user error:', err);
@@ -128,10 +131,81 @@ timer: 1500,
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
+  // var parser = require('simple-excel-to-json');
+  // var doc = parser.parseXls2Json('./example/sample.xlsx');
+
+
+
+  async function convertExcelToJson() {
+      const fileInput = document.getElementById('fileInput');
+      const file = fileInput.files[0];
+  
+      if (file) {
+          const reader = new FileReader();
+  
+          reader.onload = async function(event) {
+              const data = event.target.result;
+              const workbook = XLSX.read(data, { type: 'binary' });
+              const sheetName = workbook.SheetNames[0];
+              const sheet = workbook.Sheets[sheetName];
+  
+              // Convert sheet to array of objects
+            const jsonDataArray = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+            // Prepare to store successful posts
+            const successfulPosts = [];
+
+            // Loop through each object in the jsonDataArray (skip the first row)
+            for (let i = 1; i < jsonDataArray.length; i++) {
+                const row = jsonDataArray[i];
+
+                // Parse sem value to integer, default to 0 if empty or non-numeric
+                const sem = parseInt(row[3]) || 0;
+
+                // Construct a JSON object for the current row
+                const jsonObject = {
+                    "username": row[0] || "",   // Assuming column A (index 0) is for username
+                    "password": row[1] || "",   // Assuming column B (index 1) is for password
+                    "email": row[2] || "",      // Assuming column C (index 2) is for email
+                    "sem": sem,                 // Use parsed sem value
+                    "city": row[4] || ""        // Assuming column E (index 4) is for city
+                };
+
+                try {
+                    // Call addUsersFromExcel to post each JSON object to server individually
+
+                    await addUsersFromExcel(jsonObject);
+
+
+                    successfulPosts.push(jsonObject); // Track successful posts
+                    const numberOfStudents = successfulPosts.length;
+
+                    Swal.fire({
+                      title: `Congratulations. ${numberOfStudents} students added!`,
+                      position: "top-center",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1500,
+                      
+                    });
+                } catch (error) {
+                    console.error('Error posting user data:', error);
+                    // Handle error if post request fails
+                }
+            }
+
+            console.log('Successful posts:', successfulPosts);
+            console.log('Users data from Excel processed successfully');
+        };
+
+        reader.readAsBinaryString(file);
+    }
+}
+
   return (
     <div className="flex5 form-m">
       <form className="form" onSubmit={saveForm}>
-        <h2>{id ? 'Edit User' : 'Add New User'}</h2>
+        <h2>{id ? 'Edit User' : 'Add New Speaker'}</h2>
         <div className="form-group">
           <label htmlFor="username">Full Name:</label>
           <div className="relative">
@@ -180,7 +254,6 @@ timer: 1500,
 
         <div className="form-group">
           <label htmlFor="semester">Semester:</label>
-          <i className="fa fa-calendar">📅</i>
           <select
             name="sem"
             value={user.sem}
@@ -206,13 +279,23 @@ timer: 1500,
               onChange={handleInputChange}
               className="form-control"
             />
-            <i className="fa fa-map-marker">📞</i>
+            <i className="fa fa-map-marker">📍</i>
           </div>
           {isSubmitted && !user.city.trim() && <span className="danger">City is required</span>}
         </div>
 
         <div className="tright">
-          <button type="submit" className="btn-margin button1">Save</button>
+          <button type="submit" className="btn-margin button1">Save
+          
+          </button>
+          <hr></hr>
+          <div className="bulky">
+            <p className="bulkytext">Wanna upload an <span className="ex">Excel</span> file instead?</p>
+          <button className="btn-margin buttonS"><a href="sample.xlsx" download> Download Sample</a></button>
+          </div>
+          <input type="file" id="fileInput"/>
+          <button  onClick={convertExcelToJson}  className="btn-margin button1">Bulk Upload</button>
+          <div id="output"></div>
         </div>
       </form>
     </div>

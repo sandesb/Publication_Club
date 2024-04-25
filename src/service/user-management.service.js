@@ -15,7 +15,7 @@ const firebaseApp = initializeApp(firebaseConfig);
 // const db = getDatabase(firebaseApp);
 // const BASE_URL = 'http://localhost:4000/users';
 const BASE_URL = '/.netlify/functions/getUserById';
-
+const BASE_URL1 ='http://localhost:4000/users';
 
 const dbRef = ref(getDatabase());
 const usersRef = child(dbRef, "users"); // Assuming "users" is the key where your users are stored
@@ -104,7 +104,7 @@ export const updateUser = (id, data) => {
 
 export const addUser = (data) => {
   return new Promise((resolve, reject) => {
-    axios.post(BASE_URL, data)
+    axios.post('http://localhost:4000/users', data)
         .then(() => {
           resolve(true);
         }).catch((err) => {
@@ -112,6 +112,18 @@ export const addUser = (data) => {
         })
   });
 }
+
+export const addUsersFromExcel = (jsonDataArray) => {
+  return new Promise((resolve, reject) => {
+      axios.post('http://localhost:4000/users', jsonDataArray)
+          .then(() => {
+              resolve(true); // Resolve promise if successful
+          })
+          .catch((err) => {
+              reject(err); // Reject promise with error if request fails
+          });
+  });
+};
 
 // export const addUser = async (userData) => {
 //   const { username, password, email, sem, city } = userData;
@@ -148,7 +160,7 @@ export const addUser = (data) => {
 
 export const deleteUser = (userId) => {
   return new Promise((resolve, reject) => {
-    axios.delete(`${BASE_URL}/${userId}`)
+    axios.delete(`${BASE_URL1}/${userId}`)
         .then(() => {
           resolve(true);
         }).catch((err) => {
@@ -170,7 +182,7 @@ export const deleteUser = (userId) => {
 
 export const getUserById = (id) => {
   return new Promise((resolve, reject) => {
-    fetch(`${BASE_URL}?id=${id}`)
+    fetch(`${BASE_URL1}?id=${id}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -184,7 +196,7 @@ export const getUserById = (id) => {
 
 export const searchByUsername = (username) => {
   return new Promise((resolve, reject) => {
-    axios.get(`${BASE_URL}?username=${username}`)
+    axios.get(`${BASE_URL1}?username=${username}`)
         .then((res) => {
           resolve(res.data);
         }).catch((err) => {
@@ -194,7 +206,7 @@ export const searchByUsername = (username) => {
 }
 export const searchByEmail = (email) => {
   return new Promise((resolve, reject) => {
-    axios.get(`${BASE_URL}?email=${email}`)
+    axios.get(`${BASE_URL1}?email=${email}`)
         .then((res) => {
           resolve(res.data);
         }).catch((err) => {

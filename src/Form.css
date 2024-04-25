@@ -15,6 +15,14 @@ body {
     margin-left: 400px;
 }
 
+@media only screen and (min-width: 1700px) {
+    .flex5{
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 670px;
+
+    }
+}
 .form {
     max-width: calc(100vw - 40px);
     width: 500px;
@@ -64,13 +72,36 @@ input {
     border: 2px solid #bebed2;
     transition: all .3s;
 }
+#fileInput{
+   margin-top:10%;
+   margin-left: 20%;
+}
+.bulky{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+.bulkytext{
+    width:100%;
+    font-size: 20px;
+}
+.buttonS{
+    width: 40%;
+    border-radius: 16px;
+    margin: auto;
+    color:#6C757D;
+}
+a .buttonS:hover{
+    background-color: #78788c ;
+    color: green !important;
+}
 .form p:before {
     content: attr(type);
     display: block;
     margin: 10px 0 0;
     font-size: 13px;
     color: #5a5a5a;
-    float: left;
+    /* float: left; */
     width: 40%;
     transition: all .3s;
 }
@@ -88,8 +119,24 @@ input {
     background: #78788c;
     color: #fff;
 }
+a{
+    text-decoration: none !important;
+    outline: none !important;
+    color: #78788c !important;
+}
+a:hover{
+    color: #006400;
+}
+.button1{
+    border-radius: 8px;
+    color:#6C757D;
+}
+.ex{
+    color: 	#006400;
+    font-weight: bold;
+}
 .tright{
-    text-align: right;
+    text-align: center;
 }
 .ui-menu{
     max-height: 150px;
