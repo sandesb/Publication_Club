@@ -131,7 +131,7 @@ const Main = () => {
 
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Well we rarely have meetings. Previously we used to do it on Wednesdays, then we got shifted to online google meetup meetings. And no it doesnt take much of your time. <code>.accordion-body</code>, Do join.
+                                            Well we rarely have meetings. Previously we used to do it on Wednesdays, then we got shifted to online google meetup meetings. And no it doesnt take much of your time. Do join.
                                         </div>
                                     </div>
                                 </div>
