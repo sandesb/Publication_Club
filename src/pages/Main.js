@@ -97,13 +97,13 @@ const Main = () => {
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What is Topic Listing?
+                                        What is Publication Club?
                                         </button>
                                     </h2>
 
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Topic Listing is free Bootstrap 5 CSS template. <strong>You are not allowed to redistribute this template</strong> on any other template collection website without our permission. Please contact TemplateMo for more detail. Thank you.
+                                            Publication Club is one of the clubs existing in <strong>Virinchi College. </strong> We host public speaking sessions every week.
                                         </div>
                                     </div>
                                 </div>
@@ -111,13 +111,13 @@ const Main = () => {
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        How to find a topic?
+                                        How to join the club?
                                     </button>
                                     </h2>
 
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            You can search on Google with <strong>keywords</strong> such as templatemo portfolio, templatemo one-page layouts, photography, digital marketing, etc.
+                                            Just contact your seniors who are members of the club<strong>or the front-desk</strong> to join Publication Club.
                                         </div>
                                     </div>
                                 </div>
@@ -125,13 +125,13 @@ const Main = () => {
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Does it need to paid?
+                                        All these meetings. Does it take your time? 
                                     </button>
                                     </h2>
 
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            Well we rarely have meetings. Previously we used to do it on Wednesdays, then we got shifted to online google meetup meetings. And no it doesnt take much of your time. <code>.accordion-body</code>, Do join.
                                         </div>
                                     </div>
                                 </div>
@@ -194,8 +194,8 @@ const Main = () => {
                             <p class="d-flex align-items-center">
                                 <span class="me-2">Email</span>
 
-                                <a href="mailto:info@company.com" class="site-footer-link">
-                                    info@company.com
+                                <a href="virinchipublicationclub@gmail.com" class="site-footer-link">
+                                    virinchipublicationclub@gmail.com
                                 </a>
                             </p>
                         </div>
