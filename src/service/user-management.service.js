@@ -16,6 +16,8 @@ const firebaseApp = initializeApp(firebaseConfig);
 // const BASE_URL = 'http://localhost:4000/users';
 const BASE_URL = '/.netlify/functions/getUserById';
 const BASE_URL1 ='http://localhost:4000/users';
+const BASE_URL2 ='http://localhost:4001/users';
+
 
 const dbRef = ref(getDatabase());
 const usersRef = child(dbRef, "users"); // Assuming "users" is the key where your users are stored
@@ -81,15 +83,63 @@ export const getAllUsers = () => {
 //   });
 // };
 
-// export const getAllUsers = () => {
-//   return new Promise((resolve, reject) => {
-//     axios.get(BASE_URL).then((res) => {
-//       resolve(res.data);
-//     }).catch((err) => {
-//       reject(err);
-//     });
-//   });
-// }
+export const getAllNotes = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:4001/users').then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+}
+export const getSem1Notes = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:4001/users/?sem=1').then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+}
+export const getSem2Notes = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:4001/users/?sem=2').then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+}
+export const getSem3Notes = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:4001/users/?sem=3').then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+}
+export const getSem6Notes = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:4001/users/?sem=4').then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+}
+
+export const getNotesView = (password) => {
+  return new Promise((resolve, reject) => {
+    axios.get(`http://localhost:4001/users/?password=${password}`)
+        .then((res) => {
+          resolve(res.data);
+        }).catch((err) => {
+          reject(err);
+        })
+  });
+}
+
 
 export const updateUser = (id, data) => {
   return new Promise((resolve, reject) => {
@@ -105,6 +155,17 @@ export const updateUser = (id, data) => {
 export const addUser = (data) => {
   return new Promise((resolve, reject) => {
     axios.post('http://localhost:4000/users', data)
+        .then(() => {
+          resolve(true);
+        }).catch((err) => {
+          reject(err);
+        })
+  });
+}
+
+export const addNotes = (data) => {
+  return new Promise((resolve, reject) => {
+    axios.post('http://localhost:4001/users', data)
         .then(() => {
           resolve(true);
         }).catch((err) => {
@@ -191,6 +252,7 @@ export const getUserById = (id) => {
   });
 }
 
+
 export const searchByUsername = (username) => {
   return new Promise((resolve, reject) => {
     axios.get(`${BASE_URL1}?username=${username}`)
@@ -211,3 +273,5 @@ export const searchByEmail = (email) => {
         })
   });
 }
+
+

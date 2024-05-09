@@ -105,6 +105,9 @@ const Header1 = () => {
                                 <li value="4" onClick={() => handleItemClick("4")}><Link to="/pages/UserManagement">4th Sem</Link></li>
                             </ul>
                         </li>
+                        <li>
+                    <Link to="/pages/Notes" className="nav-link click-scroll">Notes</Link>
+                  </li>
                   <li>
                     <Link to="/pages/Counter1" className="nav-link click-scroll">Counter</Link>
                   </li>
@@ -162,9 +165,6 @@ const Header1 = () => {
                   </li>
                   <li>
                     <Link to="/pages/UserManagement/1">Speakers</Link>
-                  </li>
-                  <li>
-                    <Link to="/pages/Counter1">Counter</Link>
                   </li>
                   <li>
                     <Link to="/pages/Faq">Timer</Link>

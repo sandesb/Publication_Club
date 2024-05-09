@@ -18,6 +18,8 @@ import Layout from './pages/theme/Layout';
 
 import UserManagement from './pages/UserManagement/UserManagement';
 import AddUser from './pages/UserManagement/AddUser'
+import AddNotes from './pages/UserManagement/AddNotes'
+
 import Counter from './pages/Counter';
 import Randomizer from './pages/Randomizer';
 import Faq from './pages/Faq';
@@ -34,6 +36,10 @@ import MainZ from './pages/MainZ';
 import MainN from './pages/MainN';
 import MainD from './pages/MainD';
 import Sort from './pages/UserManagement/Sort';
+import Notes from './pages/Notes';
+import NotesView from './pages/UserManagement/NotesView';
+
+import Sem1 from './pages/Sem1';
 
 function App() {
   return (
@@ -54,6 +60,10 @@ function App() {
 
           <Route  path="/pages/UserManagement/:values" element={<PrivateRoute component={UserManagement}/> } />
           <Route path="/pages/UserManagement/AddUser" element={<PrivateRoute component={AddUser}/>}/>
+          <Route path="/pages/UserManagement/AddNotes" element={<PrivateRoute component={AddNotes}/>}/>
+          <Route path="/pages/UserManagement/NotesView/:password" element={<PrivateRoute component={NotesView}/>}/>
+
+
 
 
           <Route path="/UserManagement/Delete/:semesterKey/:id" element={<Delete/> } />
@@ -65,6 +75,11 @@ function App() {
           <Route path="/pages/Faq" element={<Faq/> } />
           <Route path="/pages/Counter" element={<Counter/> } />
           <Route path="/pages/Counter1" element={<Counter1/> } />
+          <Route path="/pages/Notes" element={<Notes/> } />
+
+          <Route path="/pages/Sem1" element={<Sem1/> } />
+
+
 
           <Route path="/pages/Randomizer" element={<Randomizer/> } />
           <Route path="/pages/AboutUs" element={<AboutUs/> } />

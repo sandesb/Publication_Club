@@ -14,29 +14,9 @@ const UserManagement = () => {
   const { values } = useParams();
 
 
-
-  // const valueToString = {
-  //   '1': 'firstsem',
-  //   '2': 'secondsem',
-  //   '3': 'thirdsem',
-  //   '4': 'fourthsem'
-  // };
-
-  // const semesterKey = valueToString[values] || ''; 
-
   const [searchUsername, setSearchUsername] = useState('');
   const [searchEmail, setSearchEmail] = useState('');
 
-
-  // useEffect(() => {
-  //   getAllUsers().then((data) => {
-  //     alert(data);
-  //     setUsers(data);
-  //   }).catch((err) => {
-  //     alert("API server error");
-  //     console.log(err);
-  //   });
-  // }, []);
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -46,7 +26,6 @@ const UserManagement = () => {
       console.log("Error fetching users:", err);
     });
   }, []); // Empty dependency array ensures this effect runs only once on component mount
-
 
 
   useEffect(() => {
