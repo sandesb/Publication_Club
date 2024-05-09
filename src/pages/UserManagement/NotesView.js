@@ -29,7 +29,7 @@ import {getNotesView} from "../../service/user-management.service";
 
                         <div class="col-lg-8 col-12 mx-auto">
                             <h1 class="vcolor text-center">Semester-Wise Notes</h1>
-                            <h2 class="newcolor text-center ">-Notes View for Subject: {password}-</h2>
+                            <h2 class="newcolor text-center ">- Subject: {password} -</h2>
                             <div className="mb-4" style={{margin: '0 0 0 36%'}} >
             </div>
             </div>
@@ -37,19 +37,19 @@ import {getNotesView} from "../../service/user-management.service";
                     </div>
                 </div>
             </section>
-            <h2 class="newcolor text-center ">- PDFs -</h2>
+            <h2 class="newcolor text-center ">- Please click on the numbers to open the PDF 📖-</h2>
 
     
 
 
             <div className="bookflex">
-            <img src="../../../dunussy.png" className="bookn"></img>
 
                    {notes.map((note, index) => (
-                            <div key={index} className="book-outline1" >
+                            <div key={index} 
+                            className={`book-outline1 ${index === 0 ? 'first-book' : ''}`}>
                                 {/* Assuming 'username' and 'password' are properties of each note */}
-                                <a href={note.city}><p class="top1">{note.password}</p></a>{/* Displaying the username */}
-                                <p class="half1">{note.username}</p> {/* Displaying the password */}
+                                <a href={note.city}><p class="top1">{note.username}</p></a>{/* Displaying the username */}
+                                <p class="half1">{note.email}</p> {/* Displaying the password */}
                             </div>
                             ))}           
             </div>

@@ -26,11 +26,11 @@ const Sem3 = () =>{
 
                               <div className="bookflex">
 
-                              <img src="../dunussy.png" className="bookf"></img>
 
                       {/* Map over notes array to render each note dynamically */}
                           {notes.map((note, index) => (
-                      <Link key={index} to={`/pages/UserManagement/NotesView/${note.password}`} className="book-outline">
+                      <Link key={index} to={`/pages/UserManagement/NotesView/${note.password}`} 
+                      className={`book-outline ${index === 0 ? 'first-book' : ''}`}>
                       {/* Render each book outline as a Link */}
                           <p className="top">{note.password}</p>
                           <p className="half">{note.username}</p>

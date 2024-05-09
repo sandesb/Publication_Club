@@ -128,6 +128,15 @@ export const getSem6Notes = () => {
     });
   });
 }
+export const getSem7Notes = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('http://localhost:4001/users/?sem=5').then((res) => {
+      resolve(res.data);
+    }).catch((err) => {
+      reject(err);
+    });
+  });
+}
 
 export const getNotesView = (password) => {
   return new Promise((resolve, reject) => {

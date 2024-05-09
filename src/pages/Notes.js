@@ -12,6 +12,8 @@ import Sem1 from './Sem1';
 import Sem2 from './Sem2';
 import Sem3 from './Sem3';
 import Sem6 from './Sem6';
+import Sem7 from './Sem7';
+
 
 
 
@@ -44,6 +46,8 @@ import Sem6 from './Sem6';
             <Sem2 />
             <Sem3 />
             <Sem6 />
+            <Sem7 />
+
             
             </div>
 

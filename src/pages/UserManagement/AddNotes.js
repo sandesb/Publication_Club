@@ -111,10 +111,7 @@ timer: 1500,
 
  
 
-    if (!user.sem.trim()) {
-      errors.sem = 'Semester is required';
-      isValid = false;
-    }
+    
 
   
 
@@ -196,7 +193,9 @@ timer: 1500,
             <option value="1">1st Semester</option>
             <option value="2">2nd Semester</option>
             <option value="3">3rd Semester</option>
-            <option value="4">4th Semester</option>
+            <option value="4">6th Semester</option>
+            <option value="5">7th Semester</option>
+
           </select>
           {isSubmitted && !user.sem.trim() && <span className="danger">Semester is required</span>}
         </div>
