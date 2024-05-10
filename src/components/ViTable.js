@@ -1,7 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 const ViTable = (props) => {
   const { semesterKey } = useParams();
-
     return(
         <table class="table1"> 
         <tr>
@@ -43,17 +42,13 @@ const ViTable = (props) => {
                 )
               })
             }
-
-{props.data && props.data.length === 0 && 
+          {props.data && props.data.length === 0 && 
           <tr>
             <td colSpan={4}>No records found</td>
           </tr>
           }
         
         </table> 
-
-
-
     )
 }
 

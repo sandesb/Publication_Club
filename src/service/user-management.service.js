@@ -92,6 +92,7 @@ export const getAllNotes = () => {
     });
   });
 }
+
 export const getSem1Notes = () => {
   return new Promise((resolve, reject) => {
     axios.get('http://localhost:4001/users/?sem=1').then((res) => {
@@ -231,6 +232,17 @@ export const addUsersFromExcel = (jsonDataArray) => {
 export const deleteUser = (userId) => {
   return new Promise((resolve, reject) => {
     axios.delete(`${BASE_URL1}/${userId}`)
+        .then(() => {
+          resolve(true);
+        }).catch((err) => {
+          reject(err);
+        })
+  });
+}
+
+export const deleteNotes = (userId) => {
+  return new Promise((resolve, reject) => {
+    axios.delete(`http://localhost:4001/users/${userId}`)
         .then(() => {
           resolve(true);
         }).catch((err) => {

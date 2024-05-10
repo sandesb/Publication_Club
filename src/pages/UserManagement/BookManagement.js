@@ -7,7 +7,7 @@ import axios from "axios";
 
 
 import { useParams } from 'react-router-dom';
-import { getAllUsers, searchByEmail, searchByUsername } from "../../service/user-management.service";
+import { getAllNotes, searchByEmail, searchByUsername } from "../../service/user-management.service";
 
 
 const UserManagement = () => {
@@ -20,7 +20,7 @@ const UserManagement = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    getAllUsers().then((data) => {
+    getAllNotes().then((data) => {
       setUsers(data);
     }).catch((err) => {
       console.log("Error fetching users:", err);
@@ -32,7 +32,7 @@ const UserManagement = () => {
     // Only make the API call if a valid semesterKey is determined
     if (values) {
       axios
-        .get(`http://localhost:4000/users/?sem=${values}`) // Construct the API URL with the semesterKey
+        .get(`http://localhost:4001/users/delete/${values}`) // Construct the API URL with the semesterKey
         .then((res) => {
           console.log(res.data);
           setUsers(res.data);
@@ -64,19 +64,15 @@ const UserManagement = () => {
     const header = [
         {
             key: "username",
-            name: "Student",
+            name: "Subject",
         },
         {
             key: "email",
-            name: "Email",
+            name: "Chapter Name",
         },
         {
             key: "password",
-            name: "Matric No.",
-        },
-        {
-            key: "city",
-            name: "Contact",
+            name: "Subject Code.",
         }
     ]
 
@@ -84,16 +80,10 @@ const UserManagement = () => {
              
 
         <div class="flex1">
-            <p className="mt-5">Semester {values}</p>
+            <p className="mt-5">New {values}</p>
 
           <div className="mb-4" style={{margin: '0 1% 0 0'}} >
-        <button class="addB mx-8"><Link  className="link" to="/pages/UserManagement/AddUser">
-            ➕ Add Speakers 
-            </Link></button>
-
-            <button class="addB mx-4"><Link  className="link" to={`/pages/UserManagement/Sort/${values}`}>
-            Publish List 💻
-            </Link></button> 
+       
             </div>
 
             <div className="vi-flex-container">
@@ -103,7 +93,7 @@ const UserManagement = () => {
           className="ifield"
             title="Username"
             name="username"
-            placeholder="🔍 Search by Name...      "
+            placeholder="🔍 Search by Subject Code...      "
             value={searchUsername}
             handleInputChange={handleSearchUsername}
             />
@@ -117,7 +107,7 @@ const UserManagement = () => {
           className="ifield fa-user"
             title="Email"
             name="email"
-            placeholder="🔎 Search by Mail...         "
+            placeholder="🔎 Search by Subject Name...         "
             value={searchEmail}
             handleInputChange={handleSearchEmail}
             />
@@ -135,18 +125,13 @@ const UserManagement = () => {
             values={values}
             actions={[
             {
-              name: "View 👀 ",
-              link: `/UserManagement/detail/${values}`,
-              className: "viewB"
-            },
-            {
               name: "Edit 📝",
-              link: `/UserManagement/EditUser/${values}`,
+              link: `/UserManagement/EditUser`,
               className: "viewE"
             },
             {
               name: "Delete 🗑️", 
-              link: `/UserManagement/Delete/${values}`,
+              link: `/UserManagement/DeleteNotes`,
               className: "btn btn-outline-danger viewD"
             }
           ]}

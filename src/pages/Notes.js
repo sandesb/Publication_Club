@@ -37,7 +37,7 @@ import Sem7 from './Sem7';
             Add Notes 💻
             </Link></button> 
 
-            <button class="addB mx-4"><Link  className="link" to="/pages/UserManagement/NotesView">
+            <button class="addB mx-4"><Link  className="link" to="/pages/UserManagement/BookManagement">
             Delete Notes 🗑️
             </Link></button>
             </div>

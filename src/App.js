@@ -25,6 +25,7 @@ import Randomizer from './pages/Randomizer';
 import Faq from './pages/Faq';
 import Detail from './pages/UserManagement/Detail';
 import Delete from './pages/UserManagement/Delete';
+import DeleteNotes from './pages/UserManagement/DeleteNotes';
 // import EditUser from './pages/UserManagement/EditUser';
 
 import PrivateRoute from './routes/PrivateRoute';
@@ -38,6 +39,8 @@ import MainD from './pages/MainD';
 import Sort from './pages/UserManagement/Sort';
 import Notes from './pages/Notes';
 import NotesView from './pages/UserManagement/NotesView';
+import BookManagement from './pages/UserManagement/BookManagement';
+
 
 import Sem1 from './pages/Sem1';
 
@@ -47,9 +50,9 @@ function App() {
     <BrowserRouter>
     
       <Routes> 
-      <Route path="/" element={<Login1/> } >
+      <Route path="/" element={<Login1/> }></Route>
 
-      </Route>
+
         <Route path="/" element={<Layout/>}>
         <Route path="/pages/Main" element={<PrivateRoute component={Main}/> } />
         <Route path="/pages/MainZ" element={<PrivateRoute component={MainZ}/> } />
@@ -59,14 +62,20 @@ function App() {
 
 
           <Route  path="/pages/UserManagement/:values" element={<PrivateRoute component={UserManagement}/> } />
+
           <Route path="/pages/UserManagement/AddUser" element={<PrivateRoute component={AddUser}/>}/>
           <Route path="/pages/UserManagement/AddNotes" element={<PrivateRoute component={AddNotes}/>}/>
+          <Route  path="/pages/UserManagement/BookManagement/" element={<PrivateRoute component={BookManagement}/> } />
+
           <Route path="/pages/UserManagement/NotesView/:password" element={<PrivateRoute component={NotesView}/>}/>
 
-
-
-
           <Route path="/UserManagement/Delete/:semesterKey/:id" element={<Delete/> } />
+
+
+          <Route path="/UserManagement/DeleteNotes/:id" element={<DeleteNotes/> } />
+          
+
+
           <Route path="/UserManagement/EditUser/:semesterKey/:id" element={<AddUser/>}/>
 
           <Route path="/UserManagement/Detail/:semesterKey/:id" element={<Detail/> } />
