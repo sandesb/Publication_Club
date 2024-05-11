@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getSem3Notes} from "../service/user-management.service";
+import Wind from "./Wind";
 
 
 const Sem3 = () =>{
@@ -37,7 +38,7 @@ const Sem3 = () =>{
                       </Link>
                       ))}
                   </div>
-
+                  <Wind/>
                           <img src="../shelf_wood.png" className="blur"></img>
                           </div>
   )

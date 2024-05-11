@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import { useEffect, useState } from "react";
 import {getSem1Notes} from "../service/user-management.service";
-
+import Tumbleweed from "./Tumbleweed";
 
 const Sem1 = () =>{
 
@@ -19,7 +19,7 @@ const Sem1 = () =>{
             });
         }, []); // Empty dependency array ensures this effect runs once on mount
       
-       
+        
     return(
             <div className="component-1">
                             <h2 class="newcolor text-center ">- Semester 1 -</h2>
@@ -36,7 +36,7 @@ const Sem1 = () =>{
                         </Link>
                         ))}
                     </div>
-
+                    <Tumbleweed/>
                             <img src="../shelf_wood.png" className="blur"></img>
                             </div>
     )

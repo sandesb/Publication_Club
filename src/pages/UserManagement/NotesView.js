@@ -1,10 +1,38 @@
 
 import { useEffect, useState} from "react";
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {getNotesView} from "../../service/user-management.service";
+import { animated, useSpring } from '@react-spring/web'
 
     const NotesView = () => {
-
+      const [styles, api] = useSpring(() => ({
+        x: 10,
+        rotateZ: 0,
+        config: { tension: 20, friction: 80 }, // Physics settings for animation
+      }));
+    
+      // Function to continuously animate the tumbleweed within a specific range
+      const animateTumbleweed = () => {
+        api.start({
+          to: async (next) => {
+            while (true) {
+              // Roll to the right within the constrained range (500 pixels) with bounce effect
+              await next({ x: 80, rotateZ: 360 });
+              // Roll back to the left within the constrained range (0 pixels) with bounce effect
+              await next({ x: 10, rotateZ: 0 });
+            }
+          },
+          reset: true, // Reset animation when component unmounts
+        });
+      };
+    
+    
+      React.useEffect(() => {
+        animateTumbleweed(); // Start the continuous animation when component mounts
+        return () => api.stop(); // Stop animation when component unmounts
+      }, []); // Run effect only once on mount
+    
       const { password } = useParams(); // Access the URL parameter (subject code)
 
       const [notes, setNotes] = useState([]);
@@ -39,6 +67,7 @@ import {getNotesView} from "../../service/user-management.service";
             </section>
             <h2 class="newcolor text-center ">- Please click on the numbers to open the PDF 📖-</h2>
 
+         
     
 
 
@@ -54,6 +83,16 @@ import {getNotesView} from "../../service/user-management.service";
                             ))}           
             </div>
 
+            <animated.div
+      className="spring-box"
+      style={{
+        ...styles,
+        cursor: 'pointer',
+        position: 'absolute', // Ensure it stays positioned
+        left: styles.x.interpolate((x) => `${x}%`), // Position based on x value
+        transform: styles.rotateZ.interpolate((rotateZ) => `rotate(${rotateZ}deg)`), // Apply rotation
+      }}
+    />
             <img src="../../../shelf_wood.png" className="blur"></img>
 
             {/* <h2 class="newcolor text-center ">- Slides -</h2>

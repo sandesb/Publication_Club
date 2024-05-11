@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getSem2Notes} from "../service/user-management.service";
+import Note from "./Note";
 
 
 const Sem2 = () =>{
@@ -23,6 +24,8 @@ const Sem2 = () =>{
       
         return(
           <div className="component-1">
+                      <Note/>
+
                           <h2 class="newcolor text-center ">- Semester 2 -</h2>
 
                               <div className="bookflex">
@@ -38,7 +41,6 @@ const Sem2 = () =>{
                       </Link>
                       ))}
                   </div>
-
                           <img src="../shelf_wood.png" className="blur"></img>
                           </div>
   )

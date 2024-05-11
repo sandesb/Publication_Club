@@ -38,6 +38,8 @@ import MainN from './pages/MainN';
 import MainD from './pages/MainD';
 import Sort from './pages/UserManagement/Sort';
 import Notes from './pages/Notes';
+import Note from './pages/Note';
+
 import NotesView from './pages/UserManagement/NotesView';
 import BookManagement from './pages/UserManagement/BookManagement';
 
@@ -85,6 +87,8 @@ function App() {
           <Route path="/pages/Counter" element={<Counter/> } />
           <Route path="/pages/Counter1" element={<Counter1/> } />
           <Route path="/pages/Notes" element={<Notes/> } />
+          <Route path="/pages/Note" element={<Note /> } />
+
 
           <Route path="/pages/Sem1" element={<Sem1/> } />
 

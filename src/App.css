@@ -12,6 +12,50 @@
   width:2000px;
   height:2000px;
 }
+
+.spring-box {
+  position: absolute;
+  left: 12%;
+  top: 78%;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  font-family: Helvetica;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1B1A22;
+  z-index: 2;
+  background-image: url('../public/tumble.png'); /* Add background image */
+  background-size: cover; /* Ensure image covers the box */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.spring-box1 {
+  position: absolute;
+  left: 30%;
+  top: 21%;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  font-family: Helvetica;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1B1A22;
+  z-index: 2;
+  background-image: url('../public/tumble.png'); /* Add background image */
+  background-size: cover; /* Ensure image covers the box */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+
+/* fun tumble */
+
+
+
 .blur{
   margin-bottom:6%;
   width: 100%;
@@ -411,6 +455,25 @@ font-family: var(--title-font-family);
 padding:2%;
 box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 10px 100px rgba(0,0,0,0.12);
 
+}
+@keyframes playGif {
+  0% { background-position: 0 0; }
+  100% { background-position: -500px 0; } /* Adjust based on sprite sheet dimensions */
+}
+
+.gif-container {
+  width: 100px; /* Adjust dimensions */
+  height: 100px;
+  background-image: url('../public/giphy.gif');
+  animation: playGif 1s steps(10) infinite; /* Adjust animation speed */
+}
+
+.wind{
+  width: 15%;
+  position: absolute;
+  left: 62%;
+  top: 50%;
+  z-index: 3;
 }
 .um h1{
 color:#CD181F;
