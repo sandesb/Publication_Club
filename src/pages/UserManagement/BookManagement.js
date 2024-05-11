@@ -7,15 +7,15 @@ import axios from "axios";
 
 
 import { useParams } from 'react-router-dom';
-import { getAllNotes, searchByEmail, searchByUsername } from "../../service/user-management.service";
+import { getAllNotes, searchByName, searchByCode } from "../../service/user-management.service";
 
 
 const UserManagement = () => {
   const { values } = useParams();
 
 
-  const [searchUsername, setSearchUsername] = useState('');
-  const [searchEmail, setSearchEmail] = useState('');
+  const [searchCode, setSearchCode] = useState('');
+  const [searchName, setSearchName] = useState('');
 
   const [users, setUsers] = useState([]);
 
@@ -43,18 +43,18 @@ const UserManagement = () => {
     }
   }, [values]); // Trigger the effect when semesterKey changes
 
-  const handleSearchUsername = (e) => {
-    setSearchUsername(e.target.value);
-    searchByUsername(e.target.value).then((data) => {
+  const handleSearchCode = (e) => {
+    setSearchCode(e.target.value);
+    searchByCode(e.target.value).then((data) => {
       setUsers(data);
     }).catch((err) => {
-      alert("API server error");
+      // alert("API server error");
       console.log(err);
     });
   }
-  const handleSearchEmail = (e) => {
-    setSearchEmail(e.target.value);
-    searchByEmail(e.target.value).then((data) => {
+  const handleSearchName = (e) => {
+    setSearchName(e.target.value);
+    searchByName(e.target.value).then((data) => {
       setUsers(data);
     }).catch((err) => {
       alert("API server error");
@@ -80,7 +80,7 @@ const UserManagement = () => {
              
 
         <div class="flex1">
-            <p className="mt-5">New {values}</p>
+            <p className="mt-5"></p>
 
           <div className="mb-4" style={{margin: '0 1% 0 0'}} >
        
@@ -94,8 +94,8 @@ const UserManagement = () => {
             title="Username"
             name="username"
             placeholder="🔍 Search by Subject Code...      "
-            value={searchUsername}
-            handleInputChange={handleSearchUsername}
+            value={searchCode}
+            handleInputChange={handleSearchCode}
             />
 
         </div>
@@ -107,9 +107,9 @@ const UserManagement = () => {
           className="ifield fa-user"
             title="Email"
             name="email"
-            placeholder="🔎 Search by Subject Name...         "
-            value={searchEmail}
-            handleInputChange={handleSearchEmail}
+            placeholder="🔎 Search by Chapter Name...         "
+            value={searchName}
+            handleInputChange={handleSearchName}
             />
 
 
@@ -124,11 +124,7 @@ const UserManagement = () => {
             header={header}        
             values={values}
             actions={[
-            {
-              name: "Edit 📝",
-              link: `/UserManagement/EditUser`,
-              className: "viewE"
-            },
+         
             {
               name: "Delete 🗑️", 
               link: `/UserManagement/DeleteNotes`,

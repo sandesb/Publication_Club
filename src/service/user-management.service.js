@@ -274,9 +274,31 @@ export const getUserById = (id) => {
 }
 
 
+export const searchByCode = (username) => {
+  return new Promise((resolve, reject) => {
+    axios.get(`${BASE_URL2}?password=${username}`)
+        .then((res) => {
+          resolve(res.data);
+        }).catch((err) => {
+          reject(err);
+        })
+  });
+}
+
+export const searchByName = (email) => {
+  return new Promise((resolve, reject) => {
+    axios.get(`${BASE_URL2}?email=${email}`)
+        .then((res) => {
+          resolve(res.data);
+        }).catch((err) => {
+          reject(err);
+        })
+  });
+}
+
 export const searchByUsername = (username) => {
   return new Promise((resolve, reject) => {
-    axios.get(`${BASE_URL1}?username=${username}`)
+    axios.get(`${BASE_URL1}?password=${username}`)
         .then((res) => {
           resolve(res.data);
         }).catch((err) => {
