@@ -23,8 +23,8 @@ const Sem2 = () =>{
        
       
         return(
+          
           <div className="component-1">
-                      <Note/>
 
                           <h2 class="newcolor text-center ">- Semester 2 -</h2>
 
@@ -39,7 +39,9 @@ const Sem2 = () =>{
                           <p className="top">{note.password}</p>
                           <p className="half">{note.username}</p>
                       </Link>
+                      
                       ))}
+
                   </div>
                           <img src="../shelf_wood.png" className="blur"></img>
                           </div>

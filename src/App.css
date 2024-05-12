@@ -475,6 +475,13 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 10px 100px rgba(0,0,0,0.12);
   top: 50%;
   z-index: 3;
 }
+.spider{
+  width: 7%;
+  position: absolute;
+  left: 29.7%;
+  top: 76.1%;
+  z-index: 1;
+}
 .um h1{
 color:#CD181F;
 font-weight: lighter;

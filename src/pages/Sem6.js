@@ -39,6 +39,8 @@ const Sem6 = () =>{
                   </div>
 
                           <img src="../shelf_wood.png" className="blur"></img>
+                          <img src="../spider.gif" className="spider"></img>
+
                           </div>
   )
 }

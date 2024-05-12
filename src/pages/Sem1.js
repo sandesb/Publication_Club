@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import { useEffect, useState } from "react";
 import {getSem1Notes} from "../service/user-management.service";
 import Tumbleweed from "./Tumbleweed";
+import Note from "./Note";
 
 const Sem1 = () =>{
 
@@ -38,6 +39,8 @@ const Sem1 = () =>{
                     </div>
                     <Tumbleweed/>
                             <img src="../shelf_wood.png" className="blur"></img>
+                    <Note/>
+
                             </div>
     )
 }

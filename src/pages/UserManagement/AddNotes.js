@@ -151,7 +151,7 @@ timer: 1500,
         </div>
 
         <div className="form-group">
-        <label htmlFor="password">Chapter No.</label>
+        <label htmlFor="password">Subject Code.</label>
         <div className="relative">
             <input
               type="text"

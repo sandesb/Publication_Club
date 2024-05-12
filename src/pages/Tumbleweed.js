@@ -34,7 +34,7 @@ const Tumbleweed = () =>{
             const volume = dataArray.reduce((acc, val) => acc + val, 0) / bufferLength / 255;
     
             // Check if blowing threshold is exceeded
-            if (volume > 0.12) {
+            if (volume > 0.25) {
               // Trigger tumbleweed animation with faster speed
               api.start({
                 to: async (next) => {

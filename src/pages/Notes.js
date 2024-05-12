@@ -19,6 +19,7 @@ import Sem7 from './Sem7';
 
 
 
+
     const Notes = () => {
 
     return(
@@ -44,6 +45,7 @@ import Sem7 from './Sem7';
 
             <Sem1 />
             <Sem2 />
+
             <Sem3 />
             <Sem6 />
             <Sem7 />
