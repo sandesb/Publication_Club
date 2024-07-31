@@ -264,7 +264,7 @@ const Main = () => {
                   >
                     virinchipublicationclub@gmail.com
                   </a>
-                  <p>hello</p>
+                  <p>Bello</p>
                 </p>
               </div>
             </div>
