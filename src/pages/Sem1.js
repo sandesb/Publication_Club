@@ -16,6 +16,7 @@ const Sem1 = () =>{
               setNotes(data);
             })
             .catch((error) => {
+              alert("api error");
               console.error('Error fetching notes:', error);
             });
         }, []); // Empty dependency array ensures this effect runs once on mount

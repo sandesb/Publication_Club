@@ -70,9 +70,7 @@ const handleDeleteUser = () => {
 
             <h2>Are you sure, you wanna delete {user.username} 🥺?</h2>
             <div>Username: {user.username}</div>
-            <div>Age: {user.age}</div>
-            <div>City: {user.city}</div>
-            <div>Email: {user.email}</div>
+
             <br></br>
             <div>
             <br></br>

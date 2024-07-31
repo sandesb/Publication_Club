@@ -153,7 +153,7 @@ export const getNotesView = (password) => {
 
 export const updateUser = (id, data) => {
   return new Promise((resolve, reject) => {
-    axios.put(`${BASE_URL}/${id}`, data)
+    axios.put(`${BASE_URL1}/${id}`, data)
         .then(() => {
           resolve(true);
         }).catch((err) => {
@@ -276,7 +276,7 @@ export const getUserById = (id) => {
 
 export const searchByCode = (username) => {
   return new Promise((resolve, reject) => {
-    axios.get(`${BASE_URL2}?password=${username}`)
+    axios.get(`${BASE_URL1}?password=${username}`)
         .then((res) => {
           resolve(res.data);
         }).catch((err) => {
@@ -287,7 +287,7 @@ export const searchByCode = (username) => {
 
 export const searchByName = (email) => {
   return new Promise((resolve, reject) => {
-    axios.get(`${BASE_URL2}?email=${email}`)
+    axios.get(`${BASE_URL1}?email=${email}`)
         .then((res) => {
           resolve(res.data);
         }).catch((err) => {

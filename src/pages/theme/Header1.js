@@ -84,7 +84,7 @@ const Header1 = () => {
     return (
         
             <div>
-              <nav className="navbar  " >
+              <nav className="navbar" >
                 <div className="logo">
                   <img src="/images.png" alt="logo" />
                 </div>

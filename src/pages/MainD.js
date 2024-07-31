@@ -3,7 +3,7 @@ const MainD = () => {
     return (
         <div>
 
-<main>
+<main className="mainc">
 <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
                 <div class="container">
                     <div class="row">
